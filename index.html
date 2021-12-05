@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            
+        }
+        .banner {
+            padding: 30px;
+            height: 100%;
+            width: 96%;
+            background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url("../icoders/Uej_Z96qIyW1xQNHn06_nmdNKDyRj5KMbn8uvhg3M9E.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: sticky;
+        }
+
+        .navbar {
+            width: 50%;
+            margin: auto;
+            padding: 30px 0;
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+        }
+
+        .logo {
+            width: 15%;
+            cursor: pointer;
+        }
+
+        .navbar  li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+            top: 80px;
+            
+        }
+
+        .navbar  li a {
+            text-decoration: none;
+            color: whitesmoke;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+        .navbar ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: bold;
+        }
+
+        .heading {
+            color: white;
+            font-size: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 230px;
+            left: 200px;
+        }
+
+        .intro {
+            color: beige;
+            font-size: 20px;
+            border: 2px solid aqua;
+            font-style: italic;
+        }
+        h2 {
+            position: relative;
+            left: 85vh;
+            color: whitesmoke;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        table, tr, th, td {
+            position: relative;
+            padding: 10px;
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-color: rgb(209, 131, 29);
+            font-size: 25px;
+        }
+        th {
+            background-color: yellow;
+        }
+        #symptoms {
+            color: white;
+            font-size: 25px;
+            position: relative;
+        }
+
+        .symimg {
+            display: flex;
+            position: relative;
+            left:40vh;
+            width: 50%;
+
+        }
+
+        b {
+            color: rgb(209, 131, 29);
+        }
+
+        #precautions {
+            position: relative;
+            color: white;
+            font-size: 25px;
+        }
+        
+        .preimg {
+            position: relative;
+            left: 60vh;
+        }
+
+        #vaccination {
+            color: white;
+            font-size: 25px;
+        }
+
+        .vacimg {
+            position: relative;
+            left: 65vh;
+            display: flex;
+            width: 40%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+        <div>
+            <img src="covid logo.jpg"alt="logo" class="logo">
+
+            <div>
+                <ul class="navbar">
+                    <li><a href="#">Variants</a></li>
+                    <li><a href="#">Symptoms</a></li>
+                    <li><a href="#">Precautions</a></li>
+                    <li><a href="#">Vaccination</a></li>
+                </ul>
+                <hr>
+            </div>
+<hr>
+            <div class="heading">
+                
+                <h1>COVID-19</h1>
+            </div>
+
+            <div class="intro">
+                <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARs-CoV-2 virus.
+                Most people who fall sick with COVID-19will experience mild to mederate symptoms and recover without special treatment. However, some will become seriously ill and require attention.</p>
+            </div><br><br>
+
+            <div id="variants">
+                <h2>Variants</h2>
+                <br><br><br>
+        <table>
+            <tr>
+                <th>WHO label</th>
+                <th>Pango lineage*</th>
+                <th>GISAID clade</th>
+                <th>Nextstrain clade</th>
+                <th>Earliest documented samples</th>
+                <th>Date of designation</th>
+            </tr>
+            <tr>
+                <td>Alpha</td>
+                <td>B.1.1.7</td>
+                <td>GRY</td>
+                <td>20I(V1)</td>
+                <td>United Kingdom, Sep-2020</td>
+                <td>18-Dec-2020</td>
+            </tr>
+            <tr>
+                <td>Beta</td>
+                <td>B1.351</td>
+                <td>Gh/501y.V2</td>
+                <td>20H(V2)</td>
+                <td>South-Africa, May-2020</td>
+                <td>18-Dec-2020</td>
+            </tr>
+            <tr>
+                <td>Gamma</td>
+                <td>P.1</td>
+                <td>GR/501Y.v3</td>
+                <td>20J(V3)</td>
+                <td>Brazil, November-2020</td>
+                <td>11-Jan-2021</td>
+            </tr>
+            <tr class="ind">
+                <td>Delta</td>
+                <td>B.1.617.2</td>
+                <td>G/478K.V1</td>
+                <td>21A, 21I, 21J</td>
+                <td>India, October-2020</td>
+                <td>VOI: 4-Apr-2021 VOC: 11-May-2021</td>
+            </tr>
+            <tr>
+                <td>Omicron*</td>
+                <td>B.1.1.529</td>
+                <td>GR/484A</td>
+                <td>21K</td>
+                <td>Multiple countries, November-21</td>
+                <td>VUM: 24-Nov-2021 VOC: 26-Nov-2021</td>
+            </tr>
+
+        </table>
+        <br><br><br>
+            </div>
+        </div>
+
+        <div id="symptoms">
+            <h2>Symptoms</h2><br><br><br>
+            <div class="symimg"><img src="symptomps.jpg" alt=""></div>
+            <br><br>
+            <p>COVID-19 affects diffrent people in diffrent ways. Most infected people will develop mild to moderate illness and recover without hospitalisation.</p>
+        <br>
+        <ul>
+            <b>Most common symptoms:</b>
+            <li>fever</li>
+            <li>cough</li>
+            <li>tiredness</li>
+            <li>loss of taste or smell</li>
+        </ul><br>
+    
+        <ul>
+            <b>Less common symptoms:</b>
+            <li>sore throat</li>
+            <li>headache</li>
+            <li>aches and pains</li>
+            <li>dirrhoea</li>
+            <li>a rash on skin, or discolouration of fingers or toes</li>
+            <li>red or irritated eyes</li>
+        </ul><br>
+        
+        <ul>
+            <b>Serious symptoms:</b>
+            <li>difficulty breathing</li>
+            <li>loss of speech or mobility, or confusion</li>
+            <li>chest pain</li>
+        </ul><br>
+        <p>Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.</p>
+        <p>People with mild symptoms who are otherwise healthy should manage their symptoms at home.</p>
+        <p>On average it takes 5-6 days from when someone is infected with the virus for sympyoms to show, however it can take upto 14 days.</p>
+
+        </div>
+
+        <br><br><br>
+
+        <div id="precautions">
+            <h2>Precautions</h2><br><br><br>
+            <div class="preimg"><img src="doubleMask-1241644647-770x533-1-650x428.jpg" alt=""></div><br><br><br>
+            <ul><b>To preventthe spread of COVID-19:</b><br><br>
+                <li>Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.</li>
+                <li>Wear a mask in public, especially indoors or when physical distancing is not possible.</li>
+                <li>Choose open, well-ventilated spaces over closed ones. Open a window if indoors.</li>
+                <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+                <li>Get vaccinated when it’s your turn. Follow local guidance about vaccination.</li>
+                <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+                <li>Stay home if you feel unwell.</li>
+            </ul>
+        </div><br><br><br>
+
+        <div id="vaccination">
+            
+            <h2>Vaccination</h2><br><br><br>
+            <div class="vacimg"><img src="vaccination google image.jpg" alt="" width="100%"></div><br><br><br>
+            <p>Equitable access to safe and effective vaccines is critical to ending the COVID-19 pandemic, so it is hugely encouraging to see so many vaccines proving and going into development. WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines. 
+
+                Safe and effective vaccines are a game-changing tool: but for the foreseeable future we must continue wearing masks, cleaning our hands, ensuring good ventilation indoors, physically distancing and avoiding crowds. 
+                
+                Being vaccinated does not mean that we can throw caution to the wind and put ourselves and others at risk, particularly because research is still ongoing into how much vaccines protect not only against disease but also against infection and transmission.
+                
+                See WHO’s landscape of COVID-19 vaccine candidates for the latest information on vaccines in clinical and pre-clinical development, generally updated twice a week. WHO’s COVID-19 dashboard, updated daily, also features the number of vaccine doses administered globally, with more detail provided on the dedicated COVID-19 vaccination dashboard. At a regional level, there is an AFRO COVID-19 vaccines dashboard and a PAHO COVID-19 vaccines deliveries dashboard. 
+                
+                But it’s not vaccines that will stop the pandemic, it’s vaccination. We must ensure fair and equitable access to vaccines, and ensure every country receives them and can roll them out to protect their people, starting with the most vulnerable.</p>
+        </div>
+    </div>
+</body>
+</html>
